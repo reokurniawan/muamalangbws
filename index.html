@@ -33,8 +33,7 @@
                             800: '#3D2817',
                             900: '#1A120B',
                             blush: '#FBF0EE',
-                            rose: '#E8B4B8',
-                            dark: '#121212'
+                            rose: '#E8B4B8'
                         }
                     },
                     fontFamily: {
@@ -48,10 +47,10 @@
 
     <style>
         .glass-card {
-            background: rgba(255, 255, 255, 0.75);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(225, 199, 177, 0.3);
+            border: 1px solid rgba(225, 199, 177, 0.4);
         }
         .hero-gradient {
             background: linear-gradient(135deg, #FDFBF7 0%, #F7F0E6 50%, #FBF0EE 100%);
@@ -60,9 +59,6 @@
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #8C6239 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
-        .gold-border-glow {
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
         }
     </style>
 </head>
@@ -84,9 +80,9 @@
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#tentang" class="hover:text-beauty-400 transition-colors">Tentang</a>
-                <a href="#layanan" class="hover:text-beauty-400 transition-colors">Layanan & Paket</a>
-                <a href="#galeri" class="hover:text-beauty-400 transition-colors">Galeri Hasil Makeup</a>
-                <a href="#syarat" class="hover:text-beauty-400 transition-colors">Syarat & Booking</a>
+                <a href="#galeri" class="hover:text-beauty-400 transition-colors">Galeri Foto</a>
+                <a href="#layanan" class="hover:text-beauty-400 transition-colors">Paket & Layanan</a>
+                <a href="#syarat" class="hover:text-beauty-400 transition-colors">Syarat Booking (H-3)</a>
                 <a href="#kontak" class="hover:text-beauty-400 transition-colors">Kontak</a>
             </nav>
 
@@ -94,7 +90,7 @@
             <div class="hidden md:flex items-center gap-3">
                 <a href="#booking" class="bg-beauty-900 text-beauty-100 hover:bg-beauty-800 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all shadow-md hover:shadow-lg flex items-center gap-2">
                     <i data-lucide="calendar" class="w-4 h-4 text-beauty-400"></i>
-                    Reservasi (H-3)
+                    Reservasi Slot (H-3)
                 </a>
             </div>
 
@@ -106,10 +102,10 @@
 
         <!-- Mobile Menu Dropdown -->
         <div id="mobileMenu" class="hidden md:hidden bg-beauty-50/95 border-b border-beauty-200 px-6 py-6 transition-all space-y-4">
-            <a href="#tentang" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Tentang Usaha</a>
-            <a href="#layanan" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Layanan & Paket</a>
-            <a href="#galeri" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Galeri Portfolio</a>
-            <a href="#syarat" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Syarat Ketentuan</a>
+            <a href="#tentang" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Tentang MUA</a>
+            <a href="#galeri" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Galeri Foto Hasil Makeup</a>
+            <a href="#layanan" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Paket & Layanan</a>
+            <a href="#syarat" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Aturan Booking H-3</a>
             <a href="#kontak" class="mobile-link block text-base font-medium text-beauty-900 hover:text-beauty-400">Kontak Instagram</a>
             <a href="#booking" class="mobile-link block w-full text-center bg-beauty-900 text-beauty-100 py-3 rounded-xl font-semibold">
                 Reservasi H-3 Sekarang
@@ -135,14 +131,14 @@
                     </h1>
 
                     <p class="text-beauty-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                        Menghadirkan sentuhan makeup profesional yang flawless, tahan lama, dan menonjolkan kecantikan alami Anda. Siap melayani area Malang, Bondowoso, dan sekitarnya.
+                        Menghadirkan sentuhan makeup profesional yang flawless, tahan lama, dan menonjolkan kecantikan alami Anda. Melayani area Malang, Bondowoso, dan sekitarnya.
                     </p>
 
-                    <!-- Important Badge Notice -->
+                    <!-- Important Notice Badge -->
                     <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-900 flex items-start gap-3 max-w-xl mx-auto lg:mx-0 text-left">
                         <i data-lucide="clock-4" class="w-5 h-5 text-amber-600 shrink-0 mt-0.5"></i>
                         <div class="text-xs sm:text-sm">
-                            <strong class="font-semibold">Aturan Penting Reservasi:</strong> Wajib melakukan pemesanan jadwal <span class="underline font-bold">Minimal H-3</span> sebelum hari pelaksanaan acara.
+                            <strong class="font-semibold">Aturan Penting Booking:</strong> Pemesanan jadwal wajib dilakukan <span class="underline font-bold">Minimal H-3</span> sebelum hari pelaksanaan acara.
                         </div>
                     </div>
 
@@ -152,14 +148,14 @@
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                         <a href="#galeri" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-beauty-900 font-medium border border-beauty-300 hover:bg-beauty-100 transition-all flex items-center justify-center gap-2">
-                            <i data-lucide="instagram" class="w-4 h-4 text-pink-600"></i>
-                            <span>Lihat Hasil Makeup</span>
+                            <i data-lucide="image" class="w-4 h-4 text-beauty-600"></i>
+                            <span>Lihat Galeri Foto</span>
                         </a>
                     </div>
 
                     <!-- Instagram Quick Tag Links -->
                     <div class="pt-4 flex items-center justify-center lg:justify-start gap-4 text-xs text-beauty-600">
-                        <span>Hubungi via Instagram:</span>
+                        <span>Konsultasi Instagram:</span>
                         <a href="https://instagram.com/mua_malang_bws" target="_blank" rel="noopener noreferrer" class="font-semibold text-beauty-900 hover:text-beauty-400 underline flex items-center gap-1">
                             @mua_malang_bws
                         </a>
@@ -170,36 +166,20 @@
                     </div>
                 </div>
 
-                <!-- Right Column Showcase Card -->
+                <!-- Right Column Featured Image Preview -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative mx-auto max-w-sm lg:max-w-none">
-                        <!-- Decorative Frame -->
                         <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-beauty-300 via-beauty-400 to-beauty-200 opacity-60 blur-lg"></div>
                         
-                        <div class="relative rounded-3xl overflow-hidden glass-card p-4 shadow-2xl border border-white/60">
-                            <div class="relative h-[420px] rounded-2xl overflow-hidden bg-beauty-200">
-                                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1000&auto=format&fit=crop" alt="[Hasil Makeup MUA]" class="w-full h-full object-cover">
+                        <div class="relative rounded-3xl overflow-hidden glass-card p-3 shadow-2xl border border-white/60">
+                            <div class="relative h-[430px] rounded-2xl overflow-hidden bg-beauty-200">
+                                <!-- Featured image pointing to foto1.jpg -->
+                                <img src="foto1.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1000&auto=format&fit=crop';" alt="[Hasil Makeup Utama]" class="w-full h-full object-cover">
                                 
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-                                    <span class="text-xs uppercase tracking-widest text-beauty-300 font-semibold">Signature Look</span>
+                                    <span class="text-xs uppercase tracking-widest text-beauty-300 font-semibold">Signature Beauty Look</span>
                                     <h3 class="font-serif text-2xl font-bold">Flawless & Elegant Glam</h3>
-                                    <p class="text-xs text-gray-200 mt-1">Glow natural skin finish dengan pilihan warna warm tone yang anggun.</p>
-                                </div>
-                            </div>
-
-                            <!-- Highlights Grid -->
-                            <div class="grid grid-cols-3 gap-2 mt-4 text-center">
-                                <div class="p-2 rounded-xl bg-beauty-100/80">
-                                    <span class="block text-xs font-bold text-beauty-900">Wisuda</span>
-                                    <span class="text-[10px] text-beauty-600">Fresh Look</span>
-                                </div>
-                                <div class="p-2 rounded-xl bg-beauty-100/80">
-                                    <span class="block text-xs font-bold text-beauty-900">Engagement</span>
-                                    <span class="text-[10px] text-beauty-600">Soft Romantic</span>
-                                </div>
-                                <div class="p-2 rounded-xl bg-beauty-100/80">
-                                    <span class="block text-xs font-bold text-beauty-900">Wedding</span>
-                                    <span class="text-[10px] text-beauty-600">Luxurious</span>
+                                    <p class="text-xs text-gray-200 mt-1">Glow natural skin finish untuk tampilan anggun memesona.</p>
                                 </div>
                             </div>
                         </div>
@@ -215,25 +195,29 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 
-                <div class="relative order-2 lg:order-1">
+                <div class="relative">
                     <div class="grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600&auto=format&fit=crop" alt="[Koleksi Produk Makeup MUA]" class="rounded-2xl shadow-md h-64 w-full object-cover">
-                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=600&auto=format&fit=crop" alt="[Proses Makeup Artis]" class="rounded-2xl shadow-md h-64 w-full object-cover mt-8">
+                        <div class="rounded-2xl overflow-hidden shadow-md h-64 bg-beauty-100 border border-beauty-200">
+                            <img src="foto2.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600&auto=format&fit=crop';" alt="[Foto Detail Riasan 1]" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-md h-64 bg-beauty-100 border border-beauty-200 mt-8">
+                            <img src="foto3.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=600&auto=format&fit=crop';" alt="[Foto Detail Riasan 2]" class="w-full h-full object-cover">
+                        </div>
                     </div>
-                    <div class="absolute -bottom-6 -right-6 glass-card p-6 rounded-2xl hidden sm:block border border-beauty-200 shadow-xl max-w-xs">
+                    <div class="absolute -bottom-6 -right-6 glass-card p-5 rounded-2xl hidden sm:block border border-beauty-200 shadow-xl max-w-xs">
                         <div class="flex items-center gap-3">
                             <div class="p-3 bg-beauty-900 text-beauty-400 rounded-xl">
                                 <i data-lucide="award" class="w-6 h-6"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-beauty-900 text-sm">Produk Premium</h4>
-                                <p class="text-xs text-beauty-600">Aman untuk kulit sensitif & tahan lama hingga 12+ jam.</p>
+                                <h4 class="font-bold text-beauty-900 text-sm">Produk Berkualitas</h4>
+                                <p class="text-xs text-beauty-600">Aman untuk kulit sensitif & tahan lama seharian.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-6 order-1 lg:order-2">
+                <div class="space-y-6">
                     <div class="inline-block text-xs uppercase tracking-widest text-beauty-600 font-bold border-b-2 border-beauty-400 pb-1">
                         Tentang @mua_malang_bws
                     </div>
@@ -241,26 +225,26 @@
                         Seni Merias Wajah Yang Menyesuaikan Karakter Unik Anda
                     </h2>
                     <p class="text-beauty-600 leading-relaxed text-sm sm:text-base">
-                        Di **@mua_malang_bws** (oleh **@dionndf_**), kami percaya bahwa makeup bukan sekadar menutupi, melainkan mempertegas keindahan alami yang sudah ada pada diri Anda. Menggunakan teknik aplikasi yang teliti, pemilihan shade foundation presisi, dan kombinasi produk-produk *high-end*.
+                        Di @mua_malang_bws oleh Dion - @dionndf_, kami menghadirkan layanan rias wajah profesional yang mengedepankan detail, kebersihan peralatan, serta pemilihan produk makeup terbaik agar tampilan Anda tetap anggun dan alami.
                     </p>
                     <p class="text-beauty-600 leading-relaxed text-sm sm:text-base">
-                        Baik untuk momen kelulusan (wisuda), lamaran, prewedding, pernikahan, hingga photoshoot komersial, kami siap memberikan riasan terbaik dengan kenyamanan ekstra.
+                        Melayani berbagai kebutuhan momen spesial seperti Wisuda, Lamaran/Engagement, Wedding, Prewedding, Photoshoot, maupun Event Pesta di wilayah Malang dan Bondowoso.
                     </p>
 
                     <div class="grid grid-cols-2 gap-4 pt-4 border-t border-beauty-200">
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2.5">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-beauty-400"></i>
                             <span class="text-xs sm:text-sm font-semibold text-beauty-900">Custom Makeup Look</span>
                         </div>
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2.5">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-beauty-400"></i>
-                            <span class="text-xs sm:text-sm font-semibold text-beauty-900">Home Service Available</span>
+                            <span class="text-xs sm:text-sm font-semibold text-beauty-900">Home Service (Panggil ke Rumah)</span>
                         </div>
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2.5">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-beauty-400"></i>
-                            <span class="text-xs sm:text-sm font-semibold text-beauty-900">Hygiene Tools Guarantee</span>
+                            <span class="text-xs sm:text-sm font-semibold text-beauty-900">Peralatan Higienis</span>
                         </div>
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2.5">
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-beauty-400"></i>
                             <span class="text-xs sm:text-sm font-semibold text-beauty-900">Area Malang & Bondowoso</span>
                         </div>
@@ -271,211 +255,187 @@
         </div>
     </section>
 
-    <!-- Gallery Section (Instagram Embedded Posts Focus) -->
+    <!-- MANUAL GITHUB UPLOAD GALLERY SECTION -->
     <section id="galeri" class="py-20 bg-beauty-100/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-semibold">
-                    <i data-lucide="instagram" class="w-3.5 h-3.5"></i>
-                    Portofolio Postingan Instagram
+            <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-beauty-200 text-beauty-800 text-xs font-semibold uppercase tracking-wider">
+                    <i data-lucide="camera" class="w-3.5 h-3.5 text-beauty-600"></i>
+                    Portofolio Hasil Makeup
                 </div>
                 <h2 class="font-serif text-3xl sm:text-5xl font-bold text-beauty-900">
-                    Galeri Karya Makeup Terbaru
+                    Galeri Foto Riasan
                 </h2>
                 <p class="text-beauty-600 text-sm sm:text-base">
-                    Berikut adalah beberapa dokumentasi riasan terbaru yang dipublikasikan langsung melalui akun Instagram resmi kami.
+                    Klik foto untuk memperbesar tampilan. Foto di bawah mengarah langsung ke nama file <code class="bg-beauty-200 px-2 py-0.5 rounded text-beauty-900 text-xs font-mono">foto1.jpg</code>, <code class="bg-beauty-200 px-2 py-0.5 rounded text-beauty-900 text-xs font-mono">foto2.jpg</code>, dst. di repositori GitHub Anda.
                 </p>
             </div>
 
-            <!-- Display Instagram Post Cards with Interactive Direct Embeds & Links -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Manual Image Grid (foto1.jpg to foto6.jpg) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 
-                <!-- Post 1 -->
-                <div class="glass-card rounded-3xl overflow-hidden shadow-lg border border-beauty-200 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <!-- Header Card -->
-                        <div class="p-4 border-b border-beauty-200/60 flex items-center justify-between bg-white/60">
-                            <div class="flex items-center gap-2.5">
-                                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 p-0.5">
-                                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                                        <i data-lucide="camera" class="w-4 h-4 text-beauty-900"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-bold text-beauty-900 leading-none">@mua_malang_bws</p>
-                                    <p class="text-[10px] text-beauty-600">Malang & Bondowoso</p>
-                                </div>
-                            </div>
-                            <span class="text-[10px] px-2 py-0.5 rounded bg-beauty-200 text-beauty-800 font-medium">Post #1</span>
+                <!-- Card Foto 1 -->
+                <div class="group glass-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-beauty-200 flex flex-col justify-between">
+                    <div class="relative h-80 overflow-hidden bg-beauty-200 cursor-pointer" onclick="openLightbox('foto1.jpg', 'Foto Hasil Makeup 1')">
+                        <img id="img-foto1" src="foto1.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=800&auto=format&fit=crop';" alt="[Foto Hasil Makeup 1]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="p-3 bg-white/90 text-beauty-900 rounded-full shadow-lg flex items-center gap-2 text-xs font-semibold">
+                                <i data-lucide="maximize-2" class="w-4 h-4"></i> Perbesar Foto
+                            </span>
                         </div>
-
-                        <!-- Content Image Mock / Embed Link -->
-                        <div class="relative group h-80 overflow-hidden bg-beauty-900">
-                            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=800&auto=format&fit=crop" alt="[Hasil Makeup Postingan 1]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
-                                <a href="https://www.instagram.com/p/DcVChsdAayl/?igsi=dGQwajFnZGU0emMz" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-beauty-900 rounded-full hover:scale-110 transition-transform shadow-xl flex items-center gap-2 text-xs font-semibold">
-                                    <i data-lucide="external-link" class="w-4 h-4 text-pink-600"></i>
-                                    Buka Post Instagram
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Caption Brief -->
-                        <div class="p-5 space-y-3">
-                            <div class="flex items-center gap-4 text-xs text-beauty-600">
-                                <span class="flex items-center gap-1 font-medium text-pink-600"><i data-lucide="heart" class="w-4 h-4 fill-pink-600"></i> Soft Look</span>
-                                <span class="flex items-center gap-1"><i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i> Glowing Finish</span>
-                            </div>
-                            <p class="text-xs text-beauty-800 line-clamp-3 leading-relaxed">
-                                Riasan pesta & wisuda dengan sentuhan warna coral-nude yang membuat aura kian memancar namun tetap terlihat alami.
-                            </p>
+                        <div class="absolute top-3 left-3 bg-beauty-900/80 text-white text-[10px] font-mono px-2.5 py-1 rounded-full">
+                            foto1.jpg
                         </div>
                     </div>
-
-                    <!-- Footer Link -->
-                    <div class="p-4 pt-0">
-                        <a href="https://www.instagram.com/p/DcVChsdAayl/?igsi=dGQwajFnZGU0emMz" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-beauty-900 text-beauty-100 hover:bg-beauty-800 text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
-                            <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
-                            Lihat Post di Instagram
-                        </a>
+                    <div class="p-4 bg-white/80 border-t border-beauty-200/60 flex items-center justify-between">
+                        <div>
+                            <h4 class="text-xs font-bold text-beauty-900">Look #1 - Flawless Natural</h4>
+                            <p class="text-[10px] text-beauty-600">Wisuda / Event Makeup</p>
+                        </div>
+                        <span class="text-xs font-semibold text-beauty-400">@mua_malang_bws</span>
                     </div>
                 </div>
 
-                <!-- Post 2 -->
-                <div class="glass-card rounded-3xl overflow-hidden shadow-lg border border-beauty-200 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <!-- Header Card -->
-                        <div class="p-4 border-b border-beauty-200/60 flex items-center justify-between bg-white/60">
-                            <div class="flex items-center gap-2.5">
-                                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 p-0.5">
-                                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                                        <i data-lucide="camera" class="w-4 h-4 text-beauty-900"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-bold text-beauty-900 leading-none">@mua_malang_bws</p>
-                                    <p class="text-[10px] text-beauty-600">Malang & Bondowoso</p>
-                                </div>
-                            </div>
-                            <span class="text-[10px] px-2 py-0.5 rounded bg-beauty-200 text-beauty-800 font-medium">Post #2</span>
+                <!-- Card Foto 2 -->
+                <div class="group glass-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-beauty-200 flex flex-col justify-between">
+                    <div class="relative h-80 overflow-hidden bg-beauty-200 cursor-pointer" onclick="openLightbox('foto2.jpg', 'Foto Hasil Makeup 2')">
+                        <img id="img-foto2" src="foto2.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1500840218059-b1d012394d4d?q=80&w=800&auto=format&fit=crop';" alt="[Foto Hasil Makeup 2]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="p-3 bg-white/90 text-beauty-900 rounded-full shadow-lg flex items-center gap-2 text-xs font-semibold">
+                                <i data-lucide="maximize-2" class="w-4 h-4"></i> Perbesar Foto
+                            </span>
                         </div>
-
-                        <!-- Content Image Mock / Embed Link -->
-                        <div class="relative group h-80 overflow-hidden bg-beauty-900">
-                            <img src="https://images.unsplash.com/photo-1500840218059-b1d012394d4d?q=80&w=800&auto=format&fit=crop" alt="[Hasil Makeup Postingan 2]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
-                                <a href="https://www.instagram.com/p/DZ-CmWuAfUO/?igsi=M3Bhcm1mMGk3bWdw" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-beauty-900 rounded-full hover:scale-110 transition-transform shadow-xl flex items-center gap-2 text-xs font-semibold">
-                                    <i data-lucide="external-link" class="w-4 h-4 text-pink-600"></i>
-                                    Buka Post Instagram
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Caption Brief -->
-                        <div class="p-5 space-y-3">
-                            <div class="flex items-center gap-4 text-xs text-beauty-600">
-                                <span class="flex items-center gap-1 font-medium text-pink-600"><i data-lucide="heart" class="w-4 h-4 fill-pink-600"></i> Engagement</span>
-                                <span class="flex items-center gap-1"><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-500"></i> Bold Eye Detail</span>
-                            </div>
-                            <p class="text-xs text-beauty-800 line-clamp-3 leading-relaxed">
-                                Konsep makeup lamaran yang elegan dengan detail riasan mata tegas, shimmer halus, serta complexion halus tanpa retak.
-                            </p>
+                        <div class="absolute top-3 left-3 bg-beauty-900/80 text-white text-[10px] font-mono px-2.5 py-1 rounded-full">
+                            foto2.jpg
                         </div>
                     </div>
-
-                    <!-- Footer Link -->
-                    <div class="p-4 pt-0">
-                        <a href="https://www.instagram.com/p/DZ-CmWuAfUO/?igsi=M3Bhcm1mMGk3bWdw" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-beauty-900 text-beauty-100 hover:bg-beauty-800 text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
-                            <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
-                            Lihat Post di Instagram
-                        </a>
+                    <div class="p-4 bg-white/80 border-t border-beauty-200/60 flex items-center justify-between">
+                        <div>
+                            <h4 class="text-xs font-bold text-beauty-900">Look #2 - Soft Glam Engagement</h4>
+                            <p class="text-[10px] text-beauty-600">Engagement / Lamaran</p>
+                        </div>
+                        <span class="text-xs font-semibold text-beauty-400">@mua_malang_bws</span>
                     </div>
                 </div>
 
-                <!-- Post 3 -->
-                <div class="glass-card rounded-3xl overflow-hidden shadow-lg border border-beauty-200 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <!-- Header Card -->
-                        <div class="p-4 border-b border-beauty-200/60 flex items-center justify-between bg-white/60">
-                            <div class="flex items-center gap-2.5">
-                                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 p-0.5">
-                                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                                        <i data-lucide="camera" class="w-4 h-4 text-beauty-900"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-bold text-beauty-900 leading-none">@mua_malang_bws</p>
-                                    <p class="text-[10px] text-beauty-600">Malang & Bondowoso</p>
-                                </div>
-                            </div>
-                            <span class="text-[10px] px-2 py-0.5 rounded bg-beauty-200 text-beauty-800 font-medium">Post #3</span>
+                <!-- Card Foto 3 -->
+                <div class="group glass-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-beauty-200 flex flex-col justify-between">
+                    <div class="relative h-80 overflow-hidden bg-beauty-200 cursor-pointer" onclick="openLightbox('foto3.jpg', 'Foto Hasil Makeup 3')">
+                        <img id="img-foto3" src="foto3.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=800&auto=format&fit=crop';" alt="[Foto Hasil Makeup 3]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="p-3 bg-white/90 text-beauty-900 rounded-full shadow-lg flex items-center gap-2 text-xs font-semibold">
+                                <i data-lucide="maximize-2" class="w-4 h-4"></i> Perbesar Foto
+                            </span>
                         </div>
-
-                        <!-- Content Image Mock / Embed Link -->
-                        <div class="relative group h-80 overflow-hidden bg-beauty-900">
-                            <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=800&auto=format&fit=crop" alt="[Hasil Makeup Postingan 3]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
-                                <a href="https://www.instagram.com/p/DZ67jIRB2c1/?igsi=MTdvaXkzZnZwZ3Z1bA==" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-beauty-900 rounded-full hover:scale-110 transition-transform shadow-xl flex items-center gap-2 text-xs font-semibold">
-                                    <i data-lucide="external-link" class="w-4 h-4 text-pink-600"></i>
-                                    Buka Post Instagram
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Caption Brief -->
-                        <div class="p-5 space-y-3">
-                            <div class="flex items-center gap-4 text-xs text-beauty-600">
-                                <span class="flex items-center gap-1 font-medium text-pink-600"><i data-lucide="heart" class="w-4 h-4 fill-pink-600"></i> Wedding Look</span>
-                                <span class="flex items-center gap-1"><i data-lucide="crown" class="w-4 h-4 text-amber-500"></i> Luxury Bridal</span>
-                            </div>
-                            <p class="text-xs text-beauty-800 line-clamp-3 leading-relaxed">
-                                Transformasi makeup pengantin modern dengan riasan memukau, halus, dan tahan lama seharian untuk momen terindah hidup Anda.
-                            </p>
+                        <div class="absolute top-3 left-3 bg-beauty-900/80 text-white text-[10px] font-mono px-2.5 py-1 rounded-full">
+                            foto3.jpg
                         </div>
                     </div>
+                    <div class="p-4 bg-white/80 border-t border-beauty-200/60 flex items-center justify-between">
+                        <div>
+                            <h4 class="text-xs font-bold text-beauty-900">Look #3 - Luxury Bridal Look</h4>
+                            <p class="text-[10px] text-beauty-600">Pernikahan / Wedding</p>
+                        </div>
+                        <span class="text-xs font-semibold text-beauty-400">@mua_malang_bws</span>
+                    </div>
+                </div>
 
-                    <!-- Footer Link -->
-                    <div class="p-4 pt-0">
-                        <a href="https://www.instagram.com/p/DZ67jIRB2c1/?igsi=MTdvaXkzZnZwZ3Z1bA==" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-beauty-900 text-beauty-100 hover:bg-beauty-800 text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
-                            <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
-                            Lihat Post di Instagram
-                        </a>
+                <!-- Card Foto 4 -->
+                <div class="group glass-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-beauty-200 flex flex-col justify-between">
+                    <div class="relative h-80 overflow-hidden bg-beauty-200 cursor-pointer" onclick="openLightbox('foto4.jpg', 'Foto Hasil Makeup 4')">
+                        <img id="img-foto4" src="foto4.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop';" alt="[Foto Hasil Makeup 4]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="p-3 bg-white/90 text-beauty-900 rounded-full shadow-lg flex items-center gap-2 text-xs font-semibold">
+                                <i data-lucide="maximize-2" class="w-4 h-4"></i> Perbesar Foto
+                            </span>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-beauty-900/80 text-white text-[10px] font-mono px-2.5 py-1 rounded-full">
+                            foto4.jpg
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white/80 border-t border-beauty-200/60 flex items-center justify-between">
+                        <div>
+                            <h4 class="text-xs font-bold text-beauty-900">Look #4 - Photoshoot Bold</h4>
+                            <p class="text-[10px] text-beauty-600">Commercial / Prewedding</p>
+                        </div>
+                        <span class="text-xs font-semibold text-beauty-400">@mua_malang_bws</span>
+                    </div>
+                </div>
+
+                <!-- Card Foto 5 -->
+                <div class="group glass-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-beauty-200 flex flex-col justify-between">
+                    <div class="relative h-80 overflow-hidden bg-beauty-200 cursor-pointer" onclick="openLightbox('foto5.jpg', 'Foto Hasil Makeup 5')">
+                        <img id="img-foto5" src="foto5.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop';" alt="[Foto Hasil Makeup 5]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="p-3 bg-white/90 text-beauty-900 rounded-full shadow-lg flex items-center gap-2 text-xs font-semibold">
+                                <i data-lucide="maximize-2" class="w-4 h-4"></i> Perbesar Foto
+                            </span>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-beauty-900/80 text-white text-[10px] font-mono px-2.5 py-1 rounded-full">
+                            foto5.jpg
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white/80 border-t border-beauty-200/60 flex items-center justify-between">
+                        <div>
+                            <h4 class="text-xs font-bold text-beauty-900">Look #5 - Party Glow</h4>
+                            <p class="text-[10px] text-beauty-600">Pesta & Acara Resmi</p>
+                        </div>
+                        <span class="text-xs font-semibold text-beauty-400">@mua_malang_bws</span>
+                    </div>
+                </div>
+
+                <!-- Card Foto 6 -->
+                <div class="group glass-card rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-beauty-200 flex flex-col justify-between">
+                    <div class="relative h-80 overflow-hidden bg-beauty-200 cursor-pointer" onclick="openLightbox('foto6.jpg', 'Foto Hasil Makeup 6')">
+                        <img id="img-foto6" src="foto6.jpg" onError="this.onerror=null; this.src='https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=800&auto=format&fit=crop';" alt="[Foto Hasil Makeup 6]" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="p-3 bg-white/90 text-beauty-900 rounded-full shadow-lg flex items-center gap-2 text-xs font-semibold">
+                                <i data-lucide="maximize-2" class="w-4 h-4"></i> Perbesar Foto
+                            </span>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-beauty-900/80 text-white text-[10px] font-mono px-2.5 py-1 rounded-full">
+                            foto6.jpg
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white/80 border-t border-beauty-200/60 flex items-center justify-between">
+                        <div>
+                            <h4 class="text-xs font-bold text-beauty-900">Look #6 - Fresh Graduation</h4>
+                            <p class="text-[10px] text-beauty-600">Wisuda & Yudisium</p>
+                        </div>
+                        <span class="text-xs font-semibold text-beauty-400">@mua_malang_bws</span>
                     </div>
                 </div>
 
             </div>
 
-            <!-- IG Follow CTA Banner -->
-            <div class="mt-16 text-center bg-gradient-to-r from-pink-500 via-purple-600 to-amber-500 p-0.5 rounded-3xl shadow-xl">
-                <div class="bg-beauty-900 rounded-[23px] p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="text-center md:text-left space-y-2">
-                        <h3 class="font-serif text-2xl sm:text-3xl font-bold">Lihat Portofolio Lengkap di Instagram</h3>
-                        <p class="text-xs sm:text-sm text-gray-300">Ikuti update video reels, story transformasi makeup, dan inspirasi riasan harian kami.</p>
-                    </div>
-                    <div class="flex flex-wrap items-center gap-3">
-                        <a href="https://instagram.com/mua_malang_bws" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-white text-beauty-900 hover:bg-beauty-100 text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2">
-                            <i data-lucide="instagram" class="w-4 h-4 text-pink-600"></i>
-                            @mua_malang_bws
-                        </a>
-                        <a href="https://instagram.com/dionndf_" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-white/10 text-white hover:bg-white/20 border border-white/20 text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2">
-                            <i data-lucide="user" class="w-4 h-4 text-beauty-400"></i>
-                            @dionndf_
-                        </a>
-                    </div>
+            <!-- Upload Guide Box for Github Users -->
+            <div class="mt-12 p-6 rounded-2xl bg-white border border-beauty-200 text-xs text-beauty-800 space-y-2">
+                <div class="flex items-center gap-2 font-bold text-beauty-900 text-sm">
+                    <i data-lucide="folder-up" class="w-4 h-4 text-beauty-400"></i>
+                    <span>Petunjuk Upload Foto di GitHub Repository:</span>
                 </div>
+                <p>
+                    Unggah berkas foto hasil risan Anda ke dalam folder utama GitHub tempat berkas <code class="bg-beauty-100 px-1.5 py-0.5 rounded font-mono">index.html</code> disimpan dengan format nama:
+                    <strong class="font-mono text-beauty-900">foto1.jpg</strong>, 
+                    <strong class="font-mono text-beauty-900">foto2.jpg</strong>, 
+                    <strong class="font-mono text-beauty-900">foto3.jpg</strong>, 
+                    <strong class="font-mono text-beauty-900">foto4.jpg</strong>, 
+                    <strong class="font-mono text-beauty-900">foto5.jpg</strong>, dan 
+                    <strong class="font-mono text-beauty-900">foto6.jpg</strong>.
+                </p>
             </div>
 
         </div>
     </section>
 
-    <!-- Services & Pricing Packages Section -->
+    <!-- Services & Packages Section -->
     <section id="layanan" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
                 <span class="text-xs uppercase tracking-widest text-beauty-600 font-bold">Pilihan Riasan</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-beauty-900">Layanan & Paket Makeup</h2>
-                <p class="text-beauty-600 text-sm">Setiap paket sudah termasuk konsultasi jenis kulit, pemakaian produk ternama, serta pemasangan bulu mata profesional.</p>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-beauty-900">Paket & Layanan Makeup</h2>
+                <p class="text-beauty-600 text-sm">Setiap paket sudah termasuk konsultasi kulit, produk tahan lama, serta pemasangan bulu mata profesional.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -487,10 +447,10 @@
                             <i data-lucide="graduation-cap" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-serif text-xl font-bold text-beauty-900">Makeup Wisuda</h3>
-                        <p class="text-xs text-beauty-600">Riasan fresh, tahan lama seharian dari pagi hingga akhir prosesi kelulusan.</p>
+                        <p class="text-xs text-beauty-600">Riasan fresh, halus, dan tahan lama seharian dari pagi hingga sore.</p>
                         <ul class="space-y-2 text-xs text-beauty-800 pt-2 border-t border-beauty-200">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Flawless Complexion</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Premium Lashes</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Flawless Finish</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Premium Bulu Mata</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Simple Hair/Hijab Do</li>
                         </ul>
                     </div>
@@ -504,9 +464,9 @@
                             <i data-lucide="heart-handshake" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-serif text-xl font-bold text-beauty-900">Engagement / Lamaran</h3>
-                        <p class="text-xs text-beauty-600">Tampil menawan dan anggun di hari bahagia pertunangan Anda.</p>
+                        <p class="text-xs text-beauty-600">Tampil manis dan memikat di momen lamaran spesial Anda.</p>
                         <ul class="space-y-2 text-xs text-beauty-800 pt-2 border-t border-beauty-200">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Soft Elegant Look</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Soft Elegant Style</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Custom Softlens & Lashes</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Hairdo / Hijab Styling</li>
                         </ul>
@@ -524,11 +484,11 @@
                             <i data-lucide="crown" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-serif text-xl font-bold">Wedding Akad & Resepsi</h3>
-                        <p class="text-xs text-gray-300">Riasan pengantin istimewa, mewah, dan tahan lama sepanjang acara pernikahan.</p>
+                        <p class="text-xs text-gray-300">Riasan pengantin istimewa, mewah, serta tahan lama sepanjang acara pernikahan.</p>
                         <ul class="space-y-2 text-xs text-gray-200 pt-2 border-t border-white/10">
                             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Bridal Luxury Look</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Touch Up Kit Included</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Complete Styling Accessories</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Aksesori Rias Lengkap</li>
                         </ul>
                     </div>
                     <a href="#booking" onclick="selectPackage('Makeup Wedding')" class="mt-6 w-full py-2.5 rounded-xl bg-beauty-400 text-beauty-900 text-xs font-bold text-center block hover:bg-beauty-300">Pilih Paket</a>
@@ -541,7 +501,7 @@
                             <i data-lucide="camera" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-serif text-xl font-bold text-beauty-900">Photoshoot & Party</h3>
-                        <p class="text-xs text-beauty-600">Cocok untuk acara pesta, photoshoot komersial, prewedding, atau event khusus.</p>
+                        <p class="text-xs text-beauty-600">Cocok untuk acara pesta, photoshoot komersial, prewedding, atau acara khusus.</p>
                         <ul class="space-y-2 text-xs text-beauty-800 pt-2 border-t border-beauty-200">
                             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> HD Camera Ready</li>
                             <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-beauty-400"></i> Glamour / Bold Style</li>
@@ -555,7 +515,7 @@
         </div>
     </section>
 
-    <!-- Important Rules Section (Ketentuan H-3) -->
+    <!-- H-3 Rules Banner Section -->
     <section id="syarat" class="py-16 bg-amber-500/10 border-y border-amber-500/20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="glass-card rounded-3xl p-8 sm:p-12 border border-amber-300/50 shadow-xl relative overflow-hidden">
@@ -564,12 +524,12 @@
                         <i data-lucide="alert-triangle" class="w-10 h-10"></i>
                     </div>
                     <div class="space-y-3 text-center md:text-left">
-                        <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Aturan Utama Reservasi Slot</span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Aturan Utama Reservasi</span>
                         <h3 class="font-serif text-2xl sm:text-3xl font-bold text-beauty-900">
-                            Pemesanan Wajib Dilakukan H-3 Sebelum Acara
+                            Pemesanan Wajib Minimal H-3 Sebelum Hari Acara
                         </h3>
                         <p class="text-xs sm:text-sm text-beauty-700 leading-relaxed">
-                            Guna memastikan persiapan produk, penjadwalan waktu, serta kualitas pelayanan yang optimal untuk Anda, kami **TIDAK Menerima pemesanan mendadak (same day/H-1)**. Mohon reservasi slot tanggal Anda minimal 3 hari sebelum hari pelaksanaan.
+                            Guna memastikan persiapan jadwal, ketersediaan tim, serta produk yang prima, kami **TIDAK Menerima booking mendadak (same day/H-1)**. Silakan pilih tanggal pemesanan Anda minimal 3 hari sebelum hari H.
                         </p>
                         <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs font-semibold text-beauty-900">
                             <span class="flex items-center gap-1.5 bg-amber-200/60 px-3 py-1 rounded-lg">
@@ -585,14 +545,14 @@
         </div>
     </section>
 
-    <!-- Booking Form & Reservation Calculator -->
+    <!-- Booking Form Section -->
     <section id="booking" class="py-20 bg-beauty-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center space-y-3 mb-12">
-                <span class="text-xs font-bold uppercase tracking-widest text-beauty-600">Formulir Pemesanan Jadwal</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-beauty-900">Cek Availability & Reservasi</h2>
-                <p class="text-xs sm:text-sm text-beauty-600">Isi form di bawah ini untuk terhubung langsung melalui WhatsApp atau DM Instagram kami.</p>
+                <span class="text-xs font-bold uppercase tracking-widest text-beauty-600">Formulir Pemesanan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-beauty-900">Cek Ketersediaan Slot</h2>
+                <p class="text-xs sm:text-sm text-beauty-600">Isi formulir di bawah untuk langsung terhubung melalui WhatsApp atau Instagram.</p>
             </div>
 
             <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-xl border border-beauty-200">
@@ -602,7 +562,7 @@
                         <!-- Nama Client -->
                         <div>
                             <label class="block text-xs font-bold text-beauty-900 uppercase tracking-wider mb-2">Nama Lengkap</label>
-                            <input type="text" id="clientName" required placeholder="Contoh: Anisa Putri" class="w-full px-4 py-3 rounded-xl border border-beauty-200 focus:outline-none focus:border-beauty-400 bg-white text-sm">
+                            <input type="text" id="clientName" required placeholder="Nama Anda..." class="w-full px-4 py-3 rounded-xl border border-beauty-200 focus:outline-none focus:border-beauty-400 bg-white text-sm">
                         </div>
 
                         <!-- No WhatsApp -->
@@ -622,7 +582,7 @@
                                 <option value="Makeup Engagement">Makeup Engagement / Lamaran</option>
                                 <option value="Makeup Wedding">Makeup Wedding Akad / Resepsi</option>
                                 <option value="Makeup Photoshoot/Party">Makeup Photoshoot / Party</option>
-                                <option value="Lainnya">Lainnya (Konsultasi Custom)</option>
+                                <option value="Lainnya">Lainnya (Custom Request)</option>
                             </select>
                         </div>
 
@@ -632,8 +592,8 @@
                                 Tanggal Acara <span class="text-amber-600 font-normal text-[11px]">(Minimal H-3)</span>
                             </label>
                             <input type="date" id="eventDate" required class="w-full px-4 py-3 rounded-xl border border-beauty-200 focus:outline-none focus:border-beauty-400 bg-white text-sm">
-                            <p id="dateWarning" class="text-[11px] text-amber-600 mt-1 hidden flex items-center gap-1">
-                                <i data-lucide="info" class="w-3 h-3"></i> Tanggal otomatis diset minimal 3 hari dari sekarang.
+                            <p id="dateWarning" class="text-[11px] text-amber-600 mt-1 flex items-center gap-1">
+                                <i data-lucide="info" class="w-3 h-3"></i> Tgl terdekat diset otomatis min. H-3.
                             </p>
                         </div>
                     </div>
@@ -659,7 +619,7 @@
                     <!-- Additional Notes -->
                     <div>
                         <label class="block text-xs font-bold text-beauty-900 uppercase tracking-wider mb-2">Catatan Tambahan (Opsional)</label>
-                        <textarea id="clientNotes" rows="3" placeholder="Contoh: Jumlah rombongan, jenis gaun, request khusus..." class="w-full px-4 py-3 rounded-xl border border-beauty-200 focus:outline-none focus:border-beauty-400 bg-white text-sm"></textarea>
+                        <textarea id="clientNotes" rows="3" placeholder="Contoh: Jumlah rombongan, request busana, dll..." class="w-full px-4 py-3 rounded-xl border border-beauty-200 focus:outline-none focus:border-beauty-400 bg-white text-sm"></textarea>
                     </div>
 
                     <!-- Actions -->
@@ -668,9 +628,9 @@
                             <i data-lucide="send" class="w-4 h-4 text-beauty-400"></i>
                             Kirim Pesan via WhatsApp
                         </button>
-                        <a id="igDmLink" href="https://instagram.com/mua_malang_bws" target="_blank" class="px-6 py-4 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xs uppercase tracking-wider hover:opacity-90 transition-all flex items-center justify-center gap-2">
+                        <a href="https://instagram.com/mua_malang_bws" target="_blank" class="px-6 py-4 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xs uppercase tracking-wider hover:opacity-90 transition-all flex items-center justify-center gap-2">
                             <i data-lucide="instagram" class="w-4 h-4"></i>
-                            Kirim via DM Instagram
+                            DM @mua_malang_bws
                         </a>
                     </div>
                 </form>
@@ -679,54 +639,13 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            <div class="text-center">
-                <h2 class="font-serif text-3xl font-bold text-beauty-900">Sering Ditanyakan (FAQ)</h2>
-            </div>
-
-            <div class="space-y-4">
-                <div class="p-5 rounded-2xl bg-beauty-50 border border-beauty-200">
-                    <h4 class="font-bold text-sm text-beauty-900 flex items-center gap-2">
-                        <i data-lucide="help-circle" class="w-4 h-4 text-beauty-400"></i>
-                        Mengapa pemesanan harus H-3?
-                    </h4>
-                    <p class="text-xs text-beauty-600 mt-2 leading-relaxed">
-                        Aturan H-3 diberlakukan agar kami dapat mempersiapkan produk, menyesuaikan jadwal tim hair/hijab do, serta memastikan kondisi kesehatan kulit Anda dalam keadaan siap rias.
-                    </p>
-                </div>
-
-                <div class="p-5 rounded-2xl bg-beauty-50 border border-beauty-200">
-                    <h4 class="font-bold text-sm text-beauty-900 flex items-center gap-2">
-                        <i data-lucide="help-circle" class="w-4 h-4 text-beauty-400"></i>
-                        Apakah melayani Home Service (datang ke lokasi)?
-                    </h4>
-                    <p class="text-xs text-beauty-600 mt-2 leading-relaxed">
-                        Ya, kami melayani sistem panggil ke rumah / hotel / venue di area Malang, Bondowoso, dan sekitarnya.
-                    </p>
-                </div>
-
-                <div class="p-5 rounded-2xl bg-beauty-50 border border-beauty-200">
-                    <h4 class="font-bold text-sm text-beauty-900 flex items-center gap-2">
-                        <i data-lucide="help-circle" class="w-4 h-4 text-beauty-400"></i>
-                        Bagaimana cara menghubungi secara langsung?
-                    </h4>
-                    <p class="text-xs text-beauty-600 mt-2 leading-relaxed">
-                        Anda dapat langsung mengirimkan pesan melalui DM Instagram resmi kami di <a href="https://instagram.com/mua_malang_bws" target="_blank" class="font-bold text-pink-600 underline">@mua_malang_bws</a> atau akun owner <a href="https://instagram.com/dionndf_" target="_blank" class="font-bold text-pink-600 underline">@dionndf_</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Direct Instagram Contact Footer Banner -->
     <section id="kontak" class="py-16 bg-beauty-900 text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
             <span class="text-xs uppercase tracking-widest text-beauty-400 font-bold">Informasi Lebih Lanjut</span>
             <h2 class="font-serif text-3xl sm:text-5xl font-bold">
-                Ada Pertanyaan Khusus? <br>
-                <span class="italic font-normal text-beauty-300">Mari Terhubung Langsung di Instagram</span>
+                Tanya Langsung ke Instagram <br>
+                <span class="italic font-normal text-beauty-300">Kami Siap Melayani Diskusi Riasan Anda</span>
             </h2>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
@@ -743,18 +662,29 @@
         </div>
     </section>
 
+    <!-- Lightbox Modal for Photo Zoom -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 hidden backdrop-blur-md flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <div class="max-w-4xl w-full max-h-[90vh] flex flex-col items-center justify-center space-y-4">
+            <img id="lightboxImage" src="" alt="Zoom Foto" class="max-h-[75vh] w-auto object-contain rounded-2xl border border-white/20 shadow-2xl">
+            <p id="lightboxCaption" class="text-white text-sm font-medium tracking-wide"></p>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-beauty-950 text-beauty-300 py-12 border-t border-beauty-900 text-xs">
+    <footer class="bg-beauty-900 text-beauty-300 py-10 border-t border-beauty-800 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full bg-beauty-900 text-beauty-400 flex items-center justify-center font-serif text-base font-bold">
+                <div class="w-8 h-8 rounded-full bg-white/10 text-beauty-400 flex items-center justify-center font-serif text-base font-bold">
                     M
                 </div>
                 <span class="font-serif text-sm font-bold text-white tracking-wider">@mua_malang_bws</span>
             </div>
 
             <p class="text-center">
-                &copy; <span id="currentYear"></span> MUA Malang Bondowoso. All Rights Reserved. Created by Dion (@dionndf_).
+                &copy; <span id="currentYear"></span> MUA Malang & Bondowoso. Created by Dion (@dionndf_).
             </p>
 
             <div class="flex items-center gap-4">
@@ -765,15 +695,15 @@
         </div>
     </footer>
 
-    <!-- Script Interactions -->
+    <!-- Scripts -->
     <script>
-        // Initialize Lucide Icons
+        // Lucide Icons initialization
         lucide.createIcons();
 
-        // Current Year
+        // Footer Current Year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        // Mobile Menu Toggle
+        // Mobile Nav Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -788,13 +718,11 @@
             });
         });
 
-        // Set Date Picker Minimum H-3 Logic
+        // Set Date Picker Minimum Date to H-3
         const eventDateInput = document.getElementById('eventDate');
-        const warning = document.getElementById('dateWarning');
-
         function setMinBookingDate() {
             const today = new Date();
-            // Add 3 days minimum requirement (H-3)
+            // Minimum H-3 booking restriction
             today.setDate(today.getDate() + 3);
             
             const year = today.getFullYear();
@@ -804,20 +732,18 @@
             const minDateStr = `${year}-${month}-${day}`;
             eventDateInput.min = minDateStr;
             eventDateInput.value = minDateStr;
-            warning.classList.remove('hidden');
         }
-
         setMinBookingDate();
 
-        // Select package automatically from buttons
+        // Select package automatically from grid buttons
         function selectPackage(packageName) {
             const select = document.getElementById('packageSelect');
-            if(select) {
+            if (select) {
                 select.value = packageName;
             }
         }
 
-        // Form Submit Handler -> Redirects to WhatsApp with predefined message
+        // Form Submission to WhatsApp
         function handleBookingSubmit(event) {
             event.preventDefault();
 
@@ -829,21 +755,39 @@
             const locationVal = document.getElementById('locationSelect').value;
             const notesVal = document.getElementById('clientNotes').value;
 
-            // Formatted WhatsApp Text
-            const message = `Halo Kak @mua_malang_bws / @dionndf_, saya mau booking/tanya ketersediaan slot makeup:%0A%0A` +
+            const message = `Halo Kak @mua_malang_bws / @dionndf_, saya mau booking slot makeup:%0A%0A` +
                 `📌 *Nama*: ${encodeURIComponent(name)}%0A` +
-                `📱 *No HP*: ${encodeURIComponent(phone)}%0A` +
+                `📱 *No HP/WA*: ${encodeURIComponent(phone)}%0A` +
                 `💄 *Paket*: ${encodeURIComponent(packageVal)}%0A` +
-                `📅 *Tanggal Acara*: ${encodeURIComponent(dateVal)} (H-3 Requirement Check)%0A` +
+                `📅 *Tanggal Acara*: ${encodeURIComponent(dateVal)} (Memenuhi H-3)%0A` +
                 `⏰ *Jam Selesai Makeup*: ${encodeURIComponent(timeVal)}%0A` +
                 `📍 *Lokasi*: ${encodeURIComponent(locationVal)}%0A` +
                 `📝 *Catatan*: ${encodeURIComponent(notesVal || '-')}%0A%0A` +
                 `Terima kasih!`;
 
-            // Change to your target WhatsApp Number if needed or open IG fallback
-            const waNumber = '6281234567890'; // Mock whatsapp target
-            window.open(`https://wa.me/${waNumber}?text=${message}`, '_blank');
+            const targetWA = '6281234567890'; // Silakan sesuaikan nomor WA utama jika ada
+            window.open(`https://wa.me/${targetWA}?text=${message}`, '_blank');
         }
+
+        // Lightbox Popup Functionality
+        const modal = document.getElementById('lightboxModal');
+        const modalImg = document.getElementById('lightboxImage');
+        const modalCaption = document.getElementById('lightboxCaption');
+
+        function openLightbox(imageSrc, caption) {
+            modalImg.src = imageSrc;
+            modalCaption.textContent = caption;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            modal.classList.add('hidden');
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
     </script>
 </body>
 </html>
